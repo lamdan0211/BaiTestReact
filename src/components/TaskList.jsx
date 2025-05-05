@@ -46,16 +46,16 @@ export default function TaskList({ tasks, projectId }) {
             onChange={(e) => setNewTaskName(e.target.value)}
             placeholder="Enter task name"
             autoFocus
-            className="flex-1"
+            className="flex-1 h-9"
           />
-          <Button type="submit" size="sm" className="w-20">
+          <Button type="submit" size="sm" className="w-20 h-9 bg-black hover:bg-black/70 text-white">
             Add
           </Button>
           <Button 
             type="button" 
             variant="outline" 
             size="sm"
-            className="w-20"
+            className="w-20 h-9"
             onClick={() => {
               setIsAddingTask(false)
               setNewTaskName("")
@@ -67,11 +67,11 @@ export default function TaskList({ tasks, projectId }) {
       ) : (
         <Button
           variant="outline"
-          className="w-full justify-center text-sm py-5 mt-4 bg-gray-50 hover:bg-gray-100 border-gray-200"
+          className="w-full justify-center text-sm py-5 mt-4 bg-black hover:bg-black/70 text-white border-black"
           onClick={() => setIsAddingTask(true)}
         >
-          <Plus className="h-4 w-4 mr-1.5" />
-          Add Task
+          <Plus className="h-4 w-4 mr-1.5 text-white" />
+          <span className="text-white">Add Task</span>
         </Button>
       )}
     </div>
