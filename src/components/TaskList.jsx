@@ -48,7 +48,7 @@ export default function TaskList({ tasks, projectId }) {
             autoFocus
             className="flex-1 h-9"
           />
-          <Button type="submit" size="sm" className="w-20 h-9 bg-black hover:bg-black/70 text-white">
+          <Button type="submit" size="sm" className="w-20 h-9 bg-gray-800 hover:bg-gray-700 text-white">
             Add
           </Button>
           <Button 
@@ -67,7 +67,7 @@ export default function TaskList({ tasks, projectId }) {
       ) : (
         <Button
           variant="outline"
-          className="w-full justify-center text-sm py-5 mt-4 bg-black hover:bg-black/70 text-white border-black"
+          className="w-full justify-center text-sm py-5 mt-4 bg-gray-800 hover:bg-gray-700 text-white border-gray-800"
           onClick={() => setIsAddingTask(true)}
         >
           <Plus className="h-4 w-4 mr-1.5 text-white" />
