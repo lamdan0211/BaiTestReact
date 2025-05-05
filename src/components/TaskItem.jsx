@@ -73,7 +73,7 @@ export default function TaskItem({ task, projectId }) {
         ) : (
           <label
             htmlFor={`task-${task.id}`}
-            className={`ml-3 flex-1 text-sm truncate cursor-pointer ${
+            className={`ml-3 flex-1 text-sm truncate cursor-pointer text-left ${
               task.completed ? "line-through text-gray-500" : "text-gray-900"
             }`}
           >
